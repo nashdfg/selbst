@@ -40,20 +40,19 @@ body{
   color: #75693e;
 }
 
-header{
+.front-page{
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
-  opacity: 0.9;
+  opacity: 0.7;
   filter: alpha(opacity=80);
 }
 
 .people-right{
   position: absolute;
-  z-index: 1;
   right: 0;
   bottom: 0;
   opacity: 0.65;
@@ -63,9 +62,12 @@ header{
 .texture{
   position: absolute;
   z-index: 2;
-  top: 0; 
-  opacity: 0.7;
-  filter: alpha(opacity=70);
+  left: 50%;
+  transform: translate(-50%);
+    top: 0px;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  width: 100%;
 }
 
 .logo{
@@ -76,19 +78,46 @@ header{
   transform: translate(-50%, -50%);
 }
 
+.logo-2{
+  position: absolute;
+  z-index: 7;
+  top: 32%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5b5231;
+}
+
+.title{
+  font-size: 35px;
+  font-family: seagram;
+  padding: 20px 0 0 0;
+}
+
+.subtitle{
+  font-size: 30px;
+  font-family: seagram;
+  padding: 20px 0 0 0;
+
+}
+
+.logo-2::after{
+  content: "";
+  display: block;
+  border: 1px solid #5b5231;
+  width: 100px;
+  margin: 30px auto;
+}
+
 .social-media{
   position: absolute;
   z-index: 7;
   bottom: 0; 
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 a{
   color: #5b5231;
-  font-size: 22px;
-  padding: 30px;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
@@ -109,14 +138,6 @@ logo-top{
   margin-bottom: 10px;
 }
 
-.logo-top{
-
-}
-
-.logo-top:hover{
-}
-
-
 .overlay{
   background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 9%, rgba(0,0,0,0.1) 23%, rgba(0,0,0,0.4) 63%, rgba(0,0,0,0.65) 96%, rgba(0,0,0,0.65) 100%);
   background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 9%,rgba(0,0,0,0.1) 23%,rgba(0,0,0,0.4) 63%,rgba(0,0,0,0.65) 96%,rgba(0,0,0,0.65) 100%);
@@ -128,3 +149,123 @@ logo-top{
   z-index: 3;
   opacity: 0.9;
 }
+
+.contact{
+  position: absolute;
+  top: 50%;
+  color: #4c452a;
+}
+
+.subtitle::after{
+  content: "";
+  display: block;
+  border: 0.5px solid #5b5231;
+  width: 270px;
+  margin: 30px auto;
+}
+
+footer{
+  bottom: 0;
+}
+
+#social-media{
+  color: #5b5231;
+  font-size: 22px;
+  padding: 30px;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.subtitle{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+textarea {
+  resize: none;
+}
+.form-label {
+  font-size: 12px;
+  color: #5e9bfc;
+  margin: 0;
+  display: block;
+  opacity: 1;
+  -webkit-transition: .333s ease top, .333s ease opacity;
+  transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+  border-radius: 0;
+  border-color: #4b4223;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+  background-color: transparent;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #74693f;
+}
+.js-hide-label {
+  opacity: 0;   
+}
+.js-unhighlight-label {
+  color: #999 
+}
+.btn-start-order {
+  background: 0 0 #000000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #74693f;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 20px 0;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+  border-color:  #74693f;
+  color: #74693f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
