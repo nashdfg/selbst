@@ -7,6 +7,10 @@ body{
   background-color: black;
 }
 
+
+
+
+
 .navbar-nav {
   width: 100%;
   text-align: center;
@@ -40,6 +44,10 @@ body{
   color: #75693e;
 }
 
+
+
+
+
 .front-page{
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
@@ -64,9 +72,9 @@ body{
   z-index: 2;
   left: 50%;
   transform: translate(-50%);
-    top: 0px;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  top: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
   width: 100%;
 }
 
@@ -87,27 +95,6 @@ body{
   color: #5b5231;
 }
 
-.title{
-  font-size: 35px;
-  font-family: seagram;
-  padding: 20px 0 0 0;
-}
-
-.subtitle{
-  font-size: 30px;
-  font-family: seagram;
-  padding: 20px 0 0 0;
-
-}
-
-.logo-2::after{
-  content: "";
-  display: block;
-  border: 1px solid #5b5231;
-  width: 100px;
-  margin: 30px auto;
-}
-
 .social-media{
   position: absolute;
   z-index: 7;
@@ -118,6 +105,7 @@ body{
 
 a{
   color: #5b5231;
+  font-size: 20px;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
@@ -130,12 +118,54 @@ a:hover{
 }
 
 
-li>i{
-  margin: 0 50px;
+
+
+
+
+
+
+
+
+
+.header{
+  background-image: url(../img/texture.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  color: #5b5231;
 }
 
-logo-top{
-  margin-bottom: 10px;
+.title{
+  font-size: 40px;
+  font-family: seagram;
+  padding: 20px 0 0 0;
+  letter-spacing: 1.5px;
+  color: #5b5231;
+}
+
+.subtitle{
+  font-size: 30px;
+  font-family: seagram;
+  padding: 20px 0 0 0;
+  letter-spacing: 1.25px;
+  color: #5b5231;
+  margin-top: 60px;
+}
+
+.title::after{
+  content: "";
+  display: block;
+  border: 1px solid #5b5231;
+  width: 100px;
+  margin: 30px auto;
+}
+
+#logo-top{
+  margin-bottom: 5px;
+  opacity: .7;
+  filter: alpha(opacity=70);
 }
 
 .overlay{
@@ -151,8 +181,6 @@ logo-top{
 }
 
 .contact{
-  position: absolute;
-  top: 50%;
   color: #4c452a;
 }
 
@@ -161,29 +189,40 @@ logo-top{
   display: block;
   border: 0.5px solid #5b5231;
   width: 270px;
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
-footer{
-  bottom: 0;
+
+.social-list-element{
+  margin: 15px 20px;
 }
 
-#social-media{
+.social-list-element>a{
+  font-size: 30px;
+}
+
+.contact-section{
   color: #5b5231;
-  font-size: 22px;
-  padding: 30px;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  -ms-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-  transition: all 400ms ease;
 }
 
-.subtitle{
-
+.contact-section>h3{
+  letter-spacing: 1.5px;
+  color: #75693e;
+  font-family: "seagram";
 }
 
+.contact-section>p>a{
+  font-size: 20px;
+}
 
+p{
+  font-size: 15;
+  color: #5b5231;
+}
+
+.logo-smr{
+  margin: 20px auto;
+}
 
 
 
@@ -232,7 +271,7 @@ textarea {
     border: 1px solid #000;
     border-radius: 3px;
     color: #74693f;
-    font-family: "Raleway", sans-serif;
+    font-family: "seagram";
     font-size: 16px;
     line-height: inherit;
     margin: 20px 0;
