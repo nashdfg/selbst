@@ -203,6 +203,7 @@ a:hover{
 
 .contact-section{
   color: #5b5231;
+  margin-bottom: 100px;
 }
 
 .contact-section>h3{
@@ -225,6 +226,50 @@ p{
 }
 
 
+
+
+
+
+
+
+.description{
+  margin: 30px;
+}
+
+.description>h2{
+  color: #5b5231;
+  font-family: "seagram";
+}
+
+.description>h2::after{
+  content: "";
+  display: block;
+  border: 1px solid #5b5231;
+  width: 50px;
+  margin: 15px auto;
+}
+
+.last-release-img{
+  margin-bottom: 150px;
+}
+
+.last-release-description{
+  margin: 0 30px
+}
+
+.last-release-description>h2{
+  color: #5b5231;
+  font-family: "seagram";
+  font-size: 55px;
+}
+
+.last-release-description>h2::after{
+  content: "";
+  display: block;
+  border: 1px solid #5b5231;
+  width: 100px;
+  margin: 15px auto;
+}
 
 
 
